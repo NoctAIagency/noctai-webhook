@@ -18,7 +18,7 @@ app.get('/webhook', (req, res) => {
 app.post('/webhook', async (req, res) => {
   res.sendStatus(200);
   
-  const n8nUrl = 'https://noctaistudio.app.n8n.cloud/webhook/noctai-wa-trigger/webhook';
+  const n8nUrl = 'https://noctaistudio.app.n8n.cloud/webhook/noctai-messages';
   
   try {
     await fetch(n8nUrl, {
